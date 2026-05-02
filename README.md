@@ -7,9 +7,11 @@
 ```
 claude-skills/
 ├── README.md
-└── project/
-    └── pm-msa/
-        └── java-spring-code-review.md
+├── project/
+│   └── pm-msa/
+│       └── java-spring-code-review.md
+└── blog/
+    └── blog-draft.md
 ```
 
 ## 사용법
@@ -36,3 +38,4 @@ ln -s $(pwd)/project/pm-msa/java-spring-code-review.md /path/to/pm-msa/.claude/s
 | 프로젝트 | 스킬 | 설명 |
 |----------|------|------|
 | pm-msa | `java-spring-code-review` | Java 25 / Spring Boot 4.x 코드 리뷰 (프로젝트 고유 규칙 포함) |
+| blog | `blog-draft` | 현재 세션의 작업 내용을 11dy.tistory.com 톤 블로그 초안으로 정리해 `~/dev/log_for_blog/`에 저장 (`/blog` 또는 자연어 트리거) |
