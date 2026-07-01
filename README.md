@@ -36,6 +36,19 @@ ln -s $(pwd)/project/pm-msa/java-spring-code-review.md /path/to/pm-msa/.claude/s
 - 자동: Java 파일이나 Spring Boot 설정 파일을 다룰 때 자동 활성화
 - 수동: "코드 리뷰해줘", "이 코드 괜찮아?" 등의 요청
 
+### crawler 스킬 최초 설정
+
+`crawling` 스킬은 Playwright 실행이 필요하므로 최초 1회 의존성 설치가 필요하다.
+
+```bash
+cd crawler
+npm install
+npx playwright install chromium
+```
+
+사용: `/crawling [url]` 또는 "이 페이지 크롤링 가능해?" 등의 자연어. 자세한 내용은
+[`crawler/README.md`](crawler/README.md) 참고.
+
 ## 스킬 목록
 
 | 프로젝트 | 스킬 | 설명 |
